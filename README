@@ -1,0 +1,5 @@
+Nothing major, just took the sample backbone app, and customized it a bit for play purposes.
+
+As of right now persisting with localStorage doesn't seem to work, digging into that :)
+
+Also, don't use "id" as a property name in your model class, it's reserved by backbone :P

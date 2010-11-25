@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Backbone Playground</title>
+	<script src="js/jquery.1.4.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/underscore.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/backbone.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/backbone-localstorage.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/items.js" type="text/javascript" charset="utf-8"></script>
+	
+</head>
+<body>
+    
+    <div id="itemapp">
+        
+        <h1>ItemList</h1>
+        
+        <div id="create-item">
+            <input type="text" id="new-item-id" />
+            <input type="text" id="new-item-description" />
+            <button class="new-item-create">Create this Item</button>
+        </div>
+        
+        <div id="items">
+            <ul id="item-list"></ul>
+        </div>
+        
+    </div>
+    
+	<script type="text/template" id="item-template">
+	    <div class="item">
+	        <div class="display">
+	            <span class="item-id"></span>
+	            <span class="item-description"></span>
+	            <button class="item-destroy">delete</button>
+	        </div>
+	        <div class="edit">
+	            <input class="item-id-update" type="text" value="" />
+	            <input class="item-description-update" type="text" value="" />
+	            <button class="item-update">Save</button>
+	        </div>
+	    </div>
+	</script>
+</body>
+</html>
